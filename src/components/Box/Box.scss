@@ -1,0 +1,69 @@
+.Box {
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  color: #282828;
+  display: flex;
+  flex-basis: 240px;
+  text-align: center;
+  flex-direction: column;
+  width: 20%;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.token-img {
+  filter: saturate(0.8);
+  transition-duration: 0.65s;
+  transition-timing-function: ease-in-out;
+  width: 72px;
+  max-width: 80%;
+  margin: 0 auto;
+  &-container {
+      margin-bottom: 15px;
+  }
+}
+
+.Box:hover .token-img {
+  transform: rotateY(360deg);
+  filter: saturate(1);
+}
+
+.positive {
+  color: rgb(20, 163, 20);
+}
+
+.negative {
+  color: rgb(189, 37, 37);
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+
+  main {
+    display: flex;
+    padding: 15px 0;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+}
+.all-time-low {
+    font-size: 0.725em;
+    display: flex;
+    flex-direction: column;
+  flex-basis: 50%;
+  color: rgb(189, 37, 37);
+}
+
+.all-time-high {
+    font-size: 0.725em;
+    display: flex;
+    flex-direction: column;
+  flex-basis: 50%;
+  color: rgb(20, 163, 20);
+}
+
+time {
+  display: block;
+}
