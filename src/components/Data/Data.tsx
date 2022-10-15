@@ -4,3 +4,5 @@ const CoinGeckoClient = new CoinGecko();
 export const getPrice = async () => {
   return await CoinGeckoClient.ping();
 };
+
+export default getPrice;
